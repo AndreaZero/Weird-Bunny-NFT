@@ -125,9 +125,9 @@ function App() {
     let gasLimit = CONFIG.GAS_LIMIT;
     let totalCostWei = String(cost * mintAmount);
     let totalGasLimit = String(gasLimit * mintAmount);
-    console.log("Cost: ", totalCostWei);
+    console.log("Prezzo: ", totalCostWei);
     console.log("Gas limit: ", totalGasLimit);
-    setFeedback(`Minting your ${CONFIG.NFT_NAME}...`);
+    setFeedback(`Sto mintando il tuo ${CONFIG.NFT_NAME}...`);
     setClaimingNft(true);
     blockchain.smartContract.methods
       .mint(blockchain.account, mintAmount)
@@ -139,13 +139,13 @@ function App() {
       })
       .once("error", (err) => {
         console.log(err);
-        setFeedback("Sorry, something went wrong please try again later.");
+        setFeedback("Mi dispiace, qualcosa non è andato come previsto. :(");
         setClaimingNft(false);
       })
       .then((receipt) => {
         console.log(receipt);
         setFeedback(
-          `WOW, the ${CONFIG.NFT_NAME} is yours! go visit Opensea.io to view it.`
+          `WOW, ora possiedi ${CONFIG.NFT_NAME}! Vai su opensea.io per vederlo.`
         );
         setClaimingNft(false);
         dispatch(fetchData(blockchain.account));
@@ -388,7 +388,7 @@ function App() {
                           getData();
                         }}
                       >
-                        {claimingNft ? "BUSY" : "BUY"}
+                        {claimingNft ? "in corso.." : "MINT"}
                       </StyledButton>
                     </s.Container>
                   </>
@@ -414,9 +414,8 @@ function App() {
               color: "var(--primary-text)",
             }}
           >
-            Please make sure you are connected to the right network (
-            {CONFIG.NETWORK.NAME} Mainnet) and the correct address. Please note:
-            Once you make the purchase, you cannot undo this action.
+            Per favore, assicurati di essere connesso alla giusta rete. (
+            {CONFIG.NETWORK.NAME}.
           </s.TextDescription>
           <s.SpacerSmall />
           <s.TextDescription
@@ -425,9 +424,8 @@ function App() {
               color: "var(--primary-text)",
             }}
           >
-            We have set the gas limit to {CONFIG.GAS_LIMIT} for the contract to
-            successfully mint your NFT. We recommend that you don't lower the
-            gas limit.
+            Abbiamo impostato il gas al minimo possibile {CONFIG.GAS_LIMIT} per il contratto
+            così che riesca a mintare l'NFT. Ti raccomando di non abbassarlo ulteriormente.
           </s.TextDescription>
         </s.Container>
       </s.Container>
