@@ -4,7 +4,7 @@ import { connect } from "./redux/blockchain/blockchainActions";
 import { fetchData } from "./redux/data/dataActions";
 import * as s from "./styles/globalStyles";
 import styled from "styled-components";
-import { ethers } from "https://cdn.ethers.io/lib/ethers-5.0.umd.min.js";
+import { ethers } from "ethers";
 
 const truncate = (input, len) =>
   input.length > len ? `${input.substring(0, len)}...` : input;
