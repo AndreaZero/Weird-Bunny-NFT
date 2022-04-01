@@ -217,9 +217,9 @@ function App() {
             ai={"center"}
             style={{
               backgroundColor: "var(--accent)",
-              padding: 24,
-              borderRadius: 16,
-              border: "4px dashed var(--secondary)",
+              padding: 12,
+              borderRadius: 12,
+              border: "2px dashed var(--secondary)",
               boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
             }}
           >
