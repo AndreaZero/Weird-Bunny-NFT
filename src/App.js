@@ -423,6 +423,8 @@ function App() {
               textAlign: "center",
               color: "var(--primary-text)",
             }}
+           >
+            Gas Limit: {CONFIG.GAS_LIMIT}
           </s.TextDescription>
         </s.Container>
       </s.Container>
