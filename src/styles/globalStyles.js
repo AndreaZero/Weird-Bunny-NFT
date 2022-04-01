@@ -6,8 +6,8 @@ export const Screen = styled.div`
   background-image: ${({ image }) => (image ? `url(${image})` : "none")};
   background-size: cover;
   background-position: center;
-  width: 60%;
-  min-height: 60vh;
+  width: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 `;
@@ -44,7 +44,7 @@ export const Container = styled.div`
   justify-content: ${({ jc }) => (jc ? jc : "flex-start")};
   align-items: ${({ ai }) => (ai ? ai : "flex-start")};
   background-color: ${({ test }) => (test ? "pink" : "none")};
-  width: 100%;
+  width: 60%;
   background-image: ${({ image }) => (image ? `url(${image})` : "none")};
   background-size: cover;
   background-position: center;
