@@ -212,14 +212,13 @@ function App() {
           </s.Container>
           <s.SpacerLarge />
           <s.Container
-            flex={2}
+            flex={1}
             jc={"center"}
             ai={"center"}
             style={{
-              backgroundImage: "https://www.teahub.io/photos/full/242-2428137_can-tho-university.jpg",
-              padding: 1,
-              borderRadius: 1,
-              border: "1px dashed var(--secondary)",
+              padding: 2,
+              borderRadius: 2,
+              border: "2px dashed var(--secondary)",
               boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
             }}
           >
