@@ -1,18 +1,18 @@
 {
-  "CONTRACT_ADDRESS": "0x37A4B31685050e95fbcD123D7a4C0675102a8c7b",
-  "SCAN_LINK": "https://rinkeby.etherscan.io/address/0x37a4b31685050e95fbcd123d7a4c0675102a8c7b",
+  "CONTRACT_ADDRESS": "0x96203a6bd51ea2b9DEcE83c2a71034E8ad1dF4AD",
+  "SCAN_LINK": "https://rinkeby.etherscan.io/tx/0x1866b43df4aa9dbe85fd2d37bc624d7c0c864849af9f68c1c54fb756053b794e",
   "NETWORK": {
     "NAME": "Rinkeby",
     "SYMBOL": "ETH",
     "ID": 4
   },
-  "NFT_NAME": "Weird Bunny NFT",
-  "SYMBOL": "WBUNNY",
+  "NFT_NAME": "Weird Bunny TEST",
+  "SYMBOL": "WBTEST",
   "MAX_SUPPLY": 777,
   "WEI_COST": 20000000000000000,
   "DISPLAY_COST": 0.02,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opeansea",
-  "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/weird-bunny-nft-v2",
+  "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/weird-bunny-test",
   "SHOW_BACKGROUND": true
 }
