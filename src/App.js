@@ -212,13 +212,13 @@ function App() {
           </s.Container>
           <s.SpacerLarge />
           <s.Container
-            flex={1}
+            flex={0}
             jc={"center"}
             ai={"center"}
             style={{
-              padding: 2,
-              borderRadius: 2,
-              border: "2px dashed var(--secondary)",
+              padding: 1,
+              borderRadius: 1,
+              border: "1px dashed var(--secondary)",
               boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
             }}
           >
