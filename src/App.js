@@ -126,9 +126,9 @@ function App() {
     let gasLimit = CONFIG.GAS_LIMIT;
     let totalCostWei = String(cost * mintAmount);
     let totalGasLimit = String(gasLimit * mintAmount);
-    console.log("Prezzo: ", totalCostWei);
+    console.log("Price: ", totalCostWei);
     console.log("Gas limit: ", totalGasLimit);
-    setFeedback(`Sto mintando il tuo ${CONFIG.NFT_NAME}...`);
+    setFeedback(`Minting your ${CONFIG.NFT_NAME}...`);
     setClaimingNft(true);
     blockchain.smartContract.methods
       .mint(blockchain.account, mintAmount)
@@ -140,13 +140,13 @@ function App() {
       })
       .once("error", (err) => {
         console.log(err);
-        setFeedback("Mi dispiace, qualcosa non è andato come previsto. :(");
+        setFeedback("Sorry, something went wrong :(");
         setClaimingNft(false);
       })
       .then((receipt) => {
         console.log(receipt);
         setFeedback(
-          `WOW, ora possiedi ${CONFIG.NFT_NAME}! Vai su opensea.io per vederlo.`
+          `WOW, now you own ${CONFIG.NFT_NAME}! Go to opensea.io to check it out.`
         );
         setClaimingNft(false);
         dispatch(fetchData(blockchain.account));
@@ -388,7 +388,7 @@ function App() {
                           getData();
                         }}
                       >
-                        {claimingNft ? "in corso.." : "MINT"}
+                        {claimingNft ? "processing.." : "MINT"}
                       </StyledButton>
                     </s.Container>
                   </>
@@ -414,7 +414,7 @@ function App() {
               color: "var(--primary-text)",
             }}
           >
-            Per favore, assicurati di essere connesso alla giusta rete. (
+            Please connect to the rght NET:     
             {CONFIG.NETWORK.NAME}.
           </s.TextDescription>
           <s.SpacerSmall />
@@ -423,9 +423,6 @@ function App() {
               textAlign: "center",
               color: "var(--primary-text)",
             }}
-          >
-            Abbiamo impostato il gas al minimo possibile {CONFIG.GAS_LIMIT} per il contratto
-            così che riesca a mintare l'NFT. Ti raccomando di non abbassarlo ulteriormente.
           </s.TextDescription>
         </s.Container>
       </s.Container>
