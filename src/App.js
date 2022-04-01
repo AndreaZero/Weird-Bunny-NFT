@@ -197,7 +197,7 @@ function App() {
   return (
     <s.Screen>
       <s.Container
-        flex={1}
+        flex={2}
         ai={"center"}
         style={{ padding: 24, backgroundColor: "var(--primary)" }}
         image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.png" : null}
@@ -217,8 +217,8 @@ function App() {
             ai={"center"}
             style={{
               padding: 1,
-              borderRadius: 1,
-              border: "1px dashed var(--secondary)",
+              borderRadius: 0,
+              border: "0px dashed var(--secondary)",
               boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
             }}
           >
