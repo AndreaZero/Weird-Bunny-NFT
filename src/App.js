@@ -216,7 +216,7 @@ function App() {
             jc={"center"}
             ai={"center"}
             style={{
-              backgroundColor: "var(--accent)",
+              backgroundImage: "https://www.teahub.io/photos/full/242-2428137_can-tho-university.jpg",
               padding: 1,
               borderRadius: 1,
               border: "1px dashed var(--secondary)",
