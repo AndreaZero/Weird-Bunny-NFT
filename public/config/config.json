@@ -1,6 +1,6 @@
 {
-  "CONTRACT_ADDRESS": "0x96203a6bd51ea2b9DEcE83c2a71034E8ad1dF4AD",
-  "SCAN_LINK": "https://rinkeby.etherscan.io/tx/0x1866b43df4aa9dbe85fd2d37bc624d7c0c864849af9f68c1c54fb756053b794e",
+  "CONTRACT_ADDRESS": "0xc1db37aa84927497f5abaee3965b1c8ff1cffe8a",
+  "SCAN_LINK": "https://rinkeby.etherscan.io/tx/0x4ccffc5b791988e57877de734bbcb8621eaef4e37e2547060639a6bfc3cb9e63",
   "NETWORK": {
     "NAME": "Rinkeby",
     "SYMBOL": "ETH",
@@ -13,6 +13,6 @@
   "DISPLAY_COST": 0.02,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opeansea",
-  "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/weird-bunny-test",
+  "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/weird-bunny-test2-v2",
   "SHOW_BACKGROUND": true
 }
