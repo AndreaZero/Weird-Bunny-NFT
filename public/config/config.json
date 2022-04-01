@@ -6,13 +6,13 @@
     "SYMBOL": "ETH",
     "ID": 4
   },
-  "NFT_NAME": "Weird Bunny TEST",
-  "SYMBOL": "WBTEST",
+  "NFT_NAME": "BUNNY TEST 3T",
+  "SYMBOL": "WBTEST3",
   "MAX_SUPPLY": 777,
   "WEI_COST": 20000000000000000,
   "DISPLAY_COST": 0.02,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opeansea",
-  "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/weird-bunny-test2-v2",
+  "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/bunny-test-3",
   "SHOW_BACKGROUND": true
 }
