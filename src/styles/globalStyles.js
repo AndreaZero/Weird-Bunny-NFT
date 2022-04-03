@@ -41,8 +41,33 @@ export const Container = styled.div`
   display: flex;
   flex: ${({ flex }) => (flex ? flex : 0)};
   flex-direction: ${({ fd }) => (fd ? fd : "column")};
-  justify-content: ${({ jc }) => (jc ? jc : "flex-start")};
-  align-items: ${({ ai }) => (ai ? ai : "flex-start")};
+  justify-content: ${({ jc }) => (jc ? jc : "center")};
+  align-items: ${({ ai }) => (ai ? ai : "center")};
+  background-color: ${({ test }) => (test ? "" : "none")};
+  width: 100%;
+  background-image: ${({ image }) => (image ? `url(${image})` : "none")};
+  background-size: cover;
+  background-position: center;
+`;
+
+export const openseaContainer = styled.div`
+  display: flex;
+  flex: ${({ flex }) => (flex ? flex : 0)};
+  flex-direction: ${({ fd }) => (fd ? fd : "column")};
+  justify-content: ${({ jc }) => (jc ? jc : "center")};
+  align-items: ${({ ai }) => (ai ? ai : "center")};
+  background-color: ${({ test }) => (test ? "" : "none")};
+  width: 10%;
+  background-image: ${({ image }) => (image ? `url(${image})` : "none")};
+  background-size: cover;
+  background-position: center;
+`;
+export const mintContainer = styled.div`
+  display: flex;
+  flex: ${({ flex }) => (flex ? flex : 0)};
+  flex-direction: ${({ fd }) => (fd ? fd : "column")};
+  justify-content: ${({ jc }) => (jc ? jc : "center")};
+  align-items: ${({ ai }) => (ai ? ai : "center")};
   background-color: ${({ test }) => (test ? "pink" : "none")};
   width: 100%;
   background-image: ${({ image }) => (image ? `url(${image})` : "none")};
@@ -50,9 +75,56 @@ export const Container = styled.div`
   background-position: center;
 `;
 
+export const ContainerLogo = styled.div`
+box-shadow: 0px 5px 11px 2px rgba(0, 0, 0, 0.7);
+border: 0px dashed var(--secondary);
+border-radius: 15%;
+width: 200px;
+@media (min-width: 900px) {
+  width: 250px;
+}
+@media (min-width: 1000px) {
+  width: 300px;
+}
+transition: width 0.5s;
+`;
+
+export const ContainerTwitter = styled.div`
+  display: flex;
+  flex: ${({ flex }) => (flex ? flex : 1)};
+  flex-direction: ${({ fd }) => (fd ? fd : "column")};
+  justify-content: ${({ jc }) => (jc ? jc : "center")};
+  align-items: ${({ ai }) => (ai ? ai : "center")};
+  width: 40%;
+  background-image: ${({ image }) => (image ? `url(${image})` : "none")};
+  background-size: cover;
+  background-position: center;
+  border: none;
+`;
+
+export const ContainerInstagram = styled.div`
+  display: flex;
+  flex: ${({ flex }) => (flex ? flex : 1)};
+  flex-direction: ${({ fd }) => (fd ? fd : "column")};
+  justify-content: ${({ jc }) => (jc ? jc : "center")};
+  align-items: ${({ ai }) => (ai ? ai : "center")};
+  width: 40%;
+  background-image: ${({ image }) => (image ? `url(${image})` : "none")};
+  background-size: cover;
+  background-position: center;
+  border: none;
+`;
+
 export const TextTitle = styled.p`
   color: var(--primary-text);
   font-size: 22px;
+  font-weight: 500;
+  line-height: 1.6;
+`;
+
+export const TextFounders = styled.p`
+  color: white;
+  font-size: 14px;
   font-weight: 500;
   line-height: 1.6;
 `;
